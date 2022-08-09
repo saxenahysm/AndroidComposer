@@ -9,4 +9,7 @@ Currently I'm Folling the below link for step by step process
 https://developer.android.com/courses/pathways/android-basics-compose-unit-1-pathway-1#codelab-https://developer.android.com/codelabs/basic-android-kotlin-compose-before-you-begin
 
 finished Lecture:-
-Create and use variables in Kotlin
+Create and use variables in Kotlin: 08-08-2022
+
+
+Create and use functions in Kotlin: 09-08-2022
