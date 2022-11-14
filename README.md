@@ -1,5 +1,5 @@
 # AndroidComposer
-Traget is to commit and push every to for next 5 months
+Traget is to commit and push everyday for the next 5 months
 
 
 #DAY-1
