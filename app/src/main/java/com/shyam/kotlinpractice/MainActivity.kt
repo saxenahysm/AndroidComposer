@@ -8,9 +8,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.shyam.kotlinpractice.helperClasses.ApiInterface
 import com.shyam.kotlinpractice.helperClasses.RetrofitClient
+import com.shyam.kotlinpractice.models.ResponseListUsers
 
 class MainActivity : AppCompatActivity() {
-    lateinit var txtData: TextView;
+    lateinit var txtData: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,8 +26,11 @@ class MainActivity : AppCompatActivity() {
         lifecycleScope.launchWhenCreated {
             try {
                 val response = apiInterface.getAllUsers()
-                if (response.isSuccessful()) {
+                if (response.isSuccessful) {
                     Log.e("TAG111", "getUserList: " + response.body())
+                    val model = response.body()?.data
+                    txtData.text = model?.get(0)?.firstName
+
                 } else {
                     Toast.makeText(
                         this@MainActivity, response.errorBody().toString(), Toast.LENGTH_LONG
