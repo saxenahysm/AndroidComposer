@@ -11,5 +11,6 @@ https://developer.android.com/courses/pathways/android-basics-compose-unit-1-pat
 finished Lecture:-
 Create and use variables in Kotlin: 08-08-2022
 
-
 Create and use functions in Kotlin: 09-08-2022
+
+R&D for jobScheduler to run the service in bg of android app.
